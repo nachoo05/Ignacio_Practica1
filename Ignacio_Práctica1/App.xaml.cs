@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Ignacio_Práctica1
+namespace PortalVideojuegos
 {
     /// <summary>
     /// Interaction logic for App.xaml

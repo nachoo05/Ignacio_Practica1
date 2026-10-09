@@ -1,0 +1,56 @@
+<Window x:Class="PortalVideojuegos.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="F_Login - Inicio de Sesión" 
+        Height="420" Width="380"
+        WindowStartupLocation="CenterScreen" 
+        Background="#0B0813"
+        ResizeMode="NoResize"
+        FontFamily="Consolas, 'Segoe UI', monospace">
+
+    <Grid Margin="20">
+        <Border Background="#130F24" 
+                CornerRadius="14" 
+                BorderBrush="#00F0FF" 
+                BorderThickness="1.5" 
+                Padding="22">
+            <StackPanel VerticalAlignment="Center">
+
+                <TextBlock Text="PORTAL DE ACCESO" Foreground="#FFE600" FontWeight="Black" FontSize="18" HorizontalAlignment="Center"/>
+                <TextBlock Text="Identificación de Usuario" Foreground="#7A6F9B" FontSize="11" HorizontalAlignment="Center" Margin="0,4,0,20"/>
+
+                <!-- Campo Usuario -->
+                <TextBlock Text="Usuario:" Foreground="#00F0FF" FontWeight="Bold" FontSize="12" Margin="0,0,0,4"/>
+                <TextBox x:Name="TxtUsuario" Height="32" Background="#1B1433" Foreground="White" BorderBrush="#38295C" 
+                         FontSize="12" Padding="8,4" Margin="0,0,0,14" VerticalContentAlignment="Center"/>
+
+                <!-- Campo Contraseña -->
+                <TextBlock Text="Contraseña:" Foreground="#00F0FF" FontWeight="Bold" FontSize="12" Margin="0,0,0,4"/>
+                <PasswordBox x:Name="TxtPassword" Height="32" Background="#1B1433" Foreground="White" BorderBrush="#38295C" 
+                             FontSize="12" Padding="8,4" Margin="0,0,0,12" VerticalContentAlignment="Center"/>
+
+                <!-- Mensaje Dinámico de Éxito o Error -->
+                <TextBlock x:Name="TxtMensaje" Text="" FontWeight="Bold" FontSize="11" 
+                           HorizontalAlignment="Center" Margin="0,0,0,16" TextWrapping="Wrap" TextAlignment="Center"/>
+
+                <!-- Botones de Acción -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="BtnLogin" Grid.Column="0" Content="Login" Click="BtnLogin_Click" Height="36" 
+                            Background="#00F0FF" Foreground="#0B0813" FontWeight="Bold" FontSize="11" 
+                            BorderThickness="0" Cursor="Hand"/>
+
+                    <Button Grid.Column="2" Content="Salir" Click="BtnSalir_Click" Height="36" 
+                            Background="#A62828" Foreground="White" FontWeight="Bold" FontSize="11" 
+                            BorderThickness="0" Cursor="Hand"/>
+                </Grid>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

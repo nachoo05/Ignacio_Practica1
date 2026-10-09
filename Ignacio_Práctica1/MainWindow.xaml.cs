@@ -11,6 +11,16 @@ namespace PortalVideojuegos
             InitializeComponent();
         }
 
+        // Sobrecarga que acepta usuario (usada desde LoginWindow)
+        public MainWindow(string usuario) : this()
+        {
+            if (!string.IsNullOrWhiteSpace(usuario))
+            {
+                // Mostrar el nombre de usuario en la etiqueta de perfil
+                TxtPerfilEtiqueta.Text = usuario;
+            }
+        }
+
         private void OcultarVistas()
         {
             VistaTienda.Visibility = Visibility.Collapsed;
