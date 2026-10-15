@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Threading;
 
-namespace Ignacio_Práctica1
+namespace PortalVideojuegos
 {
     public partial class LoginWindow : Window
     {

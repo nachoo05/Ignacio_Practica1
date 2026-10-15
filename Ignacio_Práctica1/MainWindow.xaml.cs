@@ -37,6 +37,16 @@ namespace PortalVideojuegos
             VistaTienda.Visibility = Visibility.Visible;
             TxtEstado.Text = "ACCESO: Catálogo Retro";
         }
+        // Evento para el TC 06: Cerrar sesión y volver al login
+        private void BtnCerrarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            // 1. Instanciamos y mostramos de nuevo la ventana de login
+            LoginWindow ventanaLogin = new LoginWindow();
+            ventanaLogin.Show();
+
+            // 2. Cerramos la ventana principal actual
+            this.Close();
+        }
 
         private void BtnComunidad_Click(object sender, RoutedEventArgs e)
         {

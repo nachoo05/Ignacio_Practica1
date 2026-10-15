@@ -155,11 +155,28 @@
                 <Border Grid.Row="2" Background="#0A0612" CornerRadius="8" Padding="8" BorderBrush="#251C3B" BorderThickness="1" Margin="0,0,0,10">
                     <TextBlock Text="CREDITS: 04" Foreground="#00FF66" FontWeight="Bold" FontSize="11" HorizontalAlignment="Center"/>
                 </Border>
+                <!-- En la columna 0 (menú lateral izquierdo), en la parte inferior -->
+                <StackPanel Grid.Row="3" Margin="0,10,0,0">
+                    <!-- Botón Cerrar Sesión  -->
+                    <Button x:Name="BtnCerrarSesion" 
+            Content="🔒 Cerrar Sesión" 
+            Click="BtnCerrarSesion_Click" 
+            Height="34" 
+            Background="#38295C" 
+            Foreground="#00F0FF" 
+            FontWeight="Bold" 
+            FontSize="11" 
+            BorderThickness="0" 
+            Margin="0,0,0,8" 
+            Cursor="Hand"/>
+
+          
 
                 <!-- Botón Salir -->
                 <Button Grid.Row="3" Content="🚪 SALIR" Click="BtnSalir_Click" Height="36" 
                         Background="#A62828" Foreground="White" FontWeight="Bold" FontSize="12"
                         BorderThickness="0" Cursor="Hand"/>
+                </StackPanel>
             </Grid>
         </Border>
 
